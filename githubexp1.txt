@@ -1,0 +1,138 @@
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa
+$ git init
+Initialized empty Git repository in C:/Users/kreha/OneDrive/Desktop/demoa/.git/
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git config --global user.name "Rafique008"
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git config --global user.email "krehaman36@gmail.com"
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git add qw.html
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git commit -m "file added jump and die"
+[master (root-commit) 4fb0750] file added jump and die
+ 1 file changed, 5 insertions(+)
+ create mode 100644 qw.html
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git remote add dir1 https://github.com/Rafique008/demoa.git
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git push dir1 master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 257 bytes | 42.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Rafique008/demoa.git
+ * [new branch]      master -> master
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git pull dir1 master
+From https://github.com/Rafique008/demoa
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git branch
+* master
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git branch master2
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git chekout master2
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git checkout master2
+Switched to branch 'master2'
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git add eval.doc
+fatal: pathspec 'eval.doc' did not match any files
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git add eval.docx
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git commit -m "document added"
+[master2 f3873f9] document added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 eval.docx
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git remote add dir2
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git remote add dir2 /c/Users/kreha/Downloads/eval.docx
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git push dir2 master2
+fatal: invalid gitfile format: C:/Users/kreha/Downloads/eval.docx
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git remote add dir2 https://github.com/Rafique008/demoa.git
+error: remote dir2 already exists.
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git remote add dir3 https://github.com/Rafique008/demoa.git
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git push dir3 master2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 24.77 KiB | 4.13 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master2' on GitHub by visiting:
+remote:      https://github.com/Rafique008/demoa/pull/new/master2
+remote:
+To https://github.com/Rafique008/demoa.git
+ * [new branch]      master2 -> master2
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master2)
+$ git checkout master
+Switched to branch 'master'
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git merge mster2
+merge: mster2 - not something we can merge
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git merge masterr2
+merge: masterr2 - not something we can merge
+
+kreha@DESKTOP-V4F8RDM MINGW32 ~/OneDrive/Desktop/demoa (master)
+$ git merge master2
+Updating 4fb0750..f3873f9
+Fast-forward
+ eval.docx | Bin 0 -> 28576 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 eval.docx
